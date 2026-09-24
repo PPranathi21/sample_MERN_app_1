@@ -1,22 +1,14 @@
 let express=require('express');
 let app=express();
-// localhost:3000/addstudent
-app.post("/addstudent",(req,res)=>{
-    res.send("add student called");
-});
-// localhost:3000/getStudents
-app.get("/getStudents",(req,res)=>{
-    res.send("get students called");
-});
-// localhost:3000/updateStudent
-app.put("/updateStudent",(req,res)=>{
-    res.send("update student called");
-});
-// localhost:3000/deletestudent
-app.delete("/deletestudent",(req,res)=>{
-    res.send("delete student is called");
-})
-// run the server
+let mongoose=require('mongoose');
+let emproutes= require('./routes/employee_route');
+mongoose.connect("mongodb://localhost:27017/hrmanagement").then(()=>console.log("db connected successfully"))
+.catch((err)=>console.log(err))
+
+app.use(express.json());//used to collect input from UIas JSON data
+
+app.use("/api/emp",emproutes);
 app.listen(3000,()=>{
+  
     console.log("server listening on port 3000");
 })
