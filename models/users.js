@@ -2,8 +2,7 @@ let mongoose=require('mongoose');
 let userSchema=mongoose.Schema({
     name : String,
     emailid:{
-        type:String,
-        unique:true
+        type:String
     },
     password : String,
     role :{
