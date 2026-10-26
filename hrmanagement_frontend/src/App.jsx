@@ -4,6 +4,7 @@ import Home from "./pages/Home"
 import About from "./pages/about"
 import Contact from "./pages/Contact"
 import {Routes,Route} from 'react-router-dom'
+import Register from "./pages/Register"
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path ="/"element={<Home></Home>}></Route>
+        <Route path ="/register" element={<Register></Register>}></Route>
         <Route path ="/about" element={<About></About>}></Route>
         <Route path ="/contact" element={<Contact></Contact>}></Route>
       </Routes>
