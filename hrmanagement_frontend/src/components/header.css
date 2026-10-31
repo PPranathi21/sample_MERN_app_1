@@ -1,10 +1,114 @@
-.header{
-    width: 100%;
-    height: 100%;
-    background-color: violet;
+
+/* Main Navbar */
+.custom-navbar {
+  background: linear-gradient(135deg, #141e46, #243b80);
+  padding: 15px 0;
+  box-shadow: 0 4px 18px rgba(20, 30, 70, 0.18);
+  position: relative;
+  z-index: 1000;
 }
-a{
-    color: seagreen;
-    text-decoration: none;
-    padding: 5px;
+
+/* Brand */
+.brand-logo {
+  color: #ffffff !important;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  transition: 0.3s ease;
+}
+
+.brand-logo:hover {
+  color: #8deaff !important;
+  transform: scale(1.03);
+}
+
+.brand-icon {
+  color: #64e4ff;
+  margin-right: 6px;
+  font-size: 29px;
+}
+
+/* Navigation Links */
+.custom-navbar .nav-link {
+  color: #e8edff;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px 16px !important;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.12);
+  transform: translateY(-2px);
+}
+
+/* Register Button */
+.custom-navbar .register-btn {
+  color: #ffffff;
+  border: 1px solid #64e4ff;
+  margin-left: 8px;
+}
+
+.custom-navbar .register-btn:hover {
+  background: #64e4ff;
+  color: #141e46;
+}
+
+/* Login Button */
+.custom-navbar .login-btn {
+  background: linear-gradient(135deg, #64e4ff, #a2f5e8);
+  color: #142044;
+  font-weight: 700;
+  margin-left: 5px;
+  padding: 10px 20px !important;
+  box-shadow: 0 4px 12px rgba(100, 228, 255, 0.2);
+}
+
+.custom-navbar .login-btn:hover {
+  background: #ffffff;
+  color: #142044;
+  box-shadow: 0 6px 16px rgba(100, 228, 255, 0.35);
+}
+
+/* Mobile Toggle Button */
+.custom-toggler {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 7px 10px;
+}
+
+.custom-toggler:focus {
+  box-shadow: 0 0 0 3px rgba(100, 228, 255, 0.3);
+}
+
+.custom-toggler .navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+
+/* Responsive Design */
+@media (max-width: 991.98px) {
+  .custom-navbar {
+    padding: 12px 0;
+  }
+
+  .custom-navbar .navbar-collapse {
+    padding-top: 15px;
+  }
+
+  .custom-navbar .navbar-nav {
+    align-items: stretch !important;
+    gap: 5px;
+  }
+
+  .custom-navbar .nav-link {
+    padding: 12px 15px !important;
+  }
+
+  .custom-navbar .register-btn,
+  .custom-navbar .login-btn {
+    margin-left: 0;
+    margin-top: 5px;
+    text-align: center;
+  }
 }

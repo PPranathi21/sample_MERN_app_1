@@ -1,0 +1,142 @@
+
+/* Main Admin Page */
+.admin-home {
+  background: #f5f7ff;
+  min-height: 75vh;
+  padding-bottom: 50px;
+}
+
+/* Hero Section */
+.admin-hero {
+  background: linear-gradient(135deg, #141e46, #243b80);
+  color: white;
+  padding: 65px 20px;
+  border-radius: 0 0 40px 40px;
+}
+
+.admin-badge {
+  display: inline-block;
+  background: rgba(100, 228, 255, 0.15);
+  color: #64e4ff;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.admin-hero h1 {
+  font-size: clamp(30px, 5vw, 42px);
+  font-weight: 800;
+  margin-top: 18px;
+  margin-bottom: 12px;
+}
+
+.admin-hero p {
+  color: #dce5ff;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* Dashboard Content */
+.admin-content {
+  padding-top: 45px;
+}
+
+.dashboard-title {
+  color: #172653;
+  font-size: 27px;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+/* Dashboard Cards */
+.admin-card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 18px;
+  text-align: center;
+  height: 100%;
+  box-shadow: 0 5px 20px rgba(20, 30, 70, 0.08);
+  border-bottom: 4px solid #64e4ff;
+  transition: all 0.3s ease;
+}
+
+.admin-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(20, 30, 70, 0.15);
+}
+
+.admin-card-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.admin-card h5 {
+  color: #596783;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.admin-card h2 {
+  color: #243b80;
+  font-size: 32px;
+  font-weight: 800;
+  margin: 12px 0;
+}
+
+.admin-card p {
+  color: #8993a8;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.admin-card .status-text {
+  color: #16a36a;
+  font-size: 26px;
+}
+
+/* Admin Information */
+.admin-info {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  border-left: 5px solid #243b80;
+  box-shadow: 0 5px 18px rgba(20, 30, 70, 0.06);
+}
+
+.admin-info h4 {
+  color: #172653;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.admin-info p {
+  color: #606b83;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admin-hero {
+    padding: 45px 15px;
+    border-radius: 0 0 25px 25px;
+  }
+
+  .admin-content {
+    padding-top: 30px;
+  }
+
+  .dashboard-title {
+    font-size: 23px;
+  }
+
+  .admin-card {
+    padding: 25px 15px;
+  }
+
+  .admin-info {
+    padding: 20px;
+  }
+}

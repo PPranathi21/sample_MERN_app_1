@@ -1,3 +1,4 @@
+import "bootstrap/dist/css/bootstrap.min.css";
 let express=require('express');
 let cors=require('cors');
 let app=express();

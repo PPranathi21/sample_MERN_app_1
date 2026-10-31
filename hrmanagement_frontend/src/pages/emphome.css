@@ -1,0 +1,160 @@
+
+/* Main Employee Page */
+.emp-home {
+  background: #f5f7ff;
+  min-height: 75vh;
+  padding-bottom: 50px;
+}
+
+/* Hero Section */
+.emp-hero {
+  background: linear-gradient(135deg, #141e46, #243b80);
+  color: white;
+  padding: 65px 20px;
+  border-radius: 0 0 40px 40px;
+}
+
+.emp-badge {
+  display: inline-block;
+  background: rgba(100, 228, 255, 0.15);
+  color: #64e4ff;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.emp-hero h1 {
+  font-size: clamp(30px, 5vw, 42px);
+  font-weight: 800;
+  margin-top: 18px;
+  margin-bottom: 12px;
+}
+
+.emp-hero p {
+  color: #dce5ff;
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 700px;
+}
+
+/* Dashboard Content */
+.emp-content {
+  padding-top: 45px;
+}
+
+.emp-section-title {
+  color: #172653;
+  font-size: 27px;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+/* Employee Cards */
+.emp-card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 18px;
+  text-align: center;
+  height: 100%;
+  box-shadow: 0 5px 20px rgba(20, 30, 70, 0.08);
+  border-bottom: 4px solid #64e4ff;
+  transition: all 0.3s ease;
+}
+
+.emp-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(20, 30, 70, 0.15);
+}
+
+.emp-card-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.emp-card h5 {
+  color: #596783;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.emp-card h2 {
+  color: #243b80;
+  font-size: 32px;
+  font-weight: 800;
+  margin: 12px 0;
+}
+
+.emp-card p {
+  color: #8993a8;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+/* Employee Information */
+.emp-info {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  border-left: 5px solid #243b80;
+  box-shadow: 0 5px 18px rgba(20, 30, 70, 0.06);
+}
+
+.emp-info h4 {
+  color: #172653;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.emp-info p {
+  color: #606b83;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+/* Quick Reminder */
+.emp-tips {
+  background: #e5f8ff;
+  padding: 22px 25px;
+  border-radius: 15px;
+  border-left: 5px solid #16a6a0;
+}
+
+.emp-tips h4 {
+  color: #172653;
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.emp-tips p {
+  color: #53647e;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .emp-hero {
+    padding: 45px 15px;
+    border-radius: 0 0 25px 25px;
+  }
+
+  .emp-content {
+    padding-top: 30px;
+  }
+
+  .emp-section-title {
+    font-size: 23px;
+  }
+
+  .emp-card {
+    padding: 25px 15px;
+  }
+
+  .emp-info,
+  .emp-tips {
+    padding: 20px;
+  }
+}

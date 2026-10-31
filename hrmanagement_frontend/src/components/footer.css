@@ -1,0 +1,90 @@
+
+/* Main Footer */
+.custom-footer {
+  background: linear-gradient(135deg, #141e46, #243b80);
+  color: #e8edff;
+  padding: 35px 0 18px;
+  margin-top: 40px;
+  box-shadow: 0 -4px 18px rgba(20, 30, 70, 0.12);
+}
+
+/* Brand */
+.footer-brand {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.footer-brand span {
+  color: #64e4ff;
+  font-size: 25px;
+}
+
+.footer-tagline {
+  color: #bdc9e9;
+  font-size: 13px;
+}
+
+/* Copyright */
+.copyright-text {
+  color: #e8edff;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* Back to Top Link */
+.back-to-top {
+  display: inline-block;
+  color: #64e4ff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 9px 15px;
+  border: 1px solid #64e4ff;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: #64e4ff;
+  color: #141e46;
+  transform: translateY(-3px);
+}
+
+/* Divider */
+.footer-divider {
+  border-color: rgba(255, 255, 255, 0.3);
+  margin: 25px 0 15px;
+}
+
+/* Bottom Text */
+.footer-bottom-text {
+  color: #bdc9e9;
+  font-size: 13px;
+}
+
+.heart {
+  color: #ff6b81;
+  font-size: 17px;
+}
+
+/* Responsive Design */
+@media (max-width: 767.98px) {
+  .custom-footer {
+    padding: 28px 0 18px;
+    margin-top: 25px;
+  }
+
+  .footer-brand {
+    font-size: 20px;
+  }
+
+  .footer-tagline {
+    margin-bottom: 8px !important;
+  }
+
+  .footer-divider {
+    margin: 20px 0 15px;
+  }
+}

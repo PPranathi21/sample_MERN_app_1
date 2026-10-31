@@ -1,0 +1,139 @@
+
+/* Main About Page */
+.about-page {
+  background: #f5f7ff;
+  min-height: 75vh;
+  padding-bottom: 50px;
+}
+
+/* Hero Section */
+.about-hero {
+  background: linear-gradient(135deg, #141e46, #243b80);
+  color: white;
+  padding: 75px 20px;
+  border-radius: 0 0 45px 45px;
+}
+
+.about-tag {
+  display: inline-block;
+  color: #64e4ff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.about-hero h1 {
+  font-size: clamp(30px, 5vw, 46px);
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.about-hero p {
+  max-width: 650px;
+  margin: auto;
+  color: #dce5ff;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* Content Section */
+.about-content {
+  padding-top: 65px;
+}
+
+/* Left Design Box */
+.about-image-box {
+  background: linear-gradient(135deg, #243b80, #141e46);
+  min-height: 300px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  color: white;
+  box-shadow: 0 12px 30px rgba(20, 30, 70, 0.2);
+  transition: 0.3s ease;
+}
+
+.about-image-box:hover {
+  transform: translateY(-7px);
+}
+
+.about-icon {
+  color: #64e4ff;
+  font-size: 65px;
+  margin-bottom: 15px;
+}
+
+.about-image-box h2 {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.about-image-box p {
+  color: #bdc9e9;
+  font-size: 14px;
+}
+
+/* Right Content */
+.section-title {
+  color: #172653;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.mission-title {
+  color: #243b80;
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 25px;
+  margin-bottom: 12px;
+}
+
+.about-description {
+  color: #606b83;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+/* Highlights */
+.about-highlight {
+  background: white;
+  padding: 18px;
+  margin-top: 20px;
+  border-radius: 12px;
+  color: #34466f;
+  font-size: 15px;
+  line-height: 2.2;
+  box-shadow: 0 5px 18px rgba(20, 30, 70, 0.07);
+}
+
+.about-highlight span {
+  color: #16a6a0;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 55px 15px;
+    border-radius: 0 0 25px 25px;
+  }
+
+  .about-content {
+    padding-top: 35px;
+  }
+
+  .about-image-box {
+    min-height: 230px;
+  }
+
+  .section-title {
+    font-size: 25px;
+  }
+}
