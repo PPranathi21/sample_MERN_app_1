@@ -1,0 +1,133 @@
+
+.login-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #141e46, #243b80);
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.login-card {
+  background: #ffffff;
+  padding: 45px 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.login-card:hover {
+  transform: translateY(-5px);
+}
+
+.login-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #243b80, #64e4ff);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 42px;
+  margin: 0 auto 20px;
+}
+
+.login-title {
+  color: #141e46;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.login-subtitle {
+  color: #606b83;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.form-label {
+  display: block;
+  text-align: left;
+  color: #243b80;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.custom-input {
+  border: 1px solid #dce2f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.custom-input .input-group-text {
+  background: #f0f4ff;
+  color: #243b80;
+  border: none;
+  padding: 12px 15px;
+}
+
+.custom-input .form-control {
+  border: none;
+  padding: 12px;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.custom-input:focus-within {
+  border-color: #243b80;
+  box-shadow: 0 0 0 3px rgba(36, 59, 128, 0.1);
+}
+
+.login-submit-btn {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #141e46, #243b80);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-submit-btn:hover {
+  background: linear-gradient(135deg, #243b80, #3474bd);
+  transform: translateY(-2px);
+  box-shadow: 0 7px 15px rgba(36, 59, 128, 0.25);
+}
+
+.login-footer {
+  border-top: 1px solid #e8ebf3;
+  margin-top: 28px;
+  padding-top: 18px;
+}
+
+.login-footer p {
+  color: #243b80;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.login-footer span {
+  color: #8992a7;
+  font-size: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+  .login-card {
+    padding: 35px 22px;
+  }
+
+  .login-title {
+    font-size: 25px;
+  }
+
+  .login-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 35px;
+  }
+}
